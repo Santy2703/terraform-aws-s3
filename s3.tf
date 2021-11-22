@@ -1,6 +1,7 @@
 
 
-
+data "aws_caller_identity" "current" {
+}
 
 resource "aws_s3_bucket" "s3_for_logs" {
     bucket = "cloud-trail-logg-ssss"
